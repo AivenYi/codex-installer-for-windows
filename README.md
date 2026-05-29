@@ -14,10 +14,6 @@
 > **一行命令，从零到使用。**  
 > 自动检测环境、安装依赖、生成配置文件、启动服务，全程引导，无需手动操作。
 
-[![Multiplatform](https://img.shields.io/badge/Multiplatform-Windows%20%7C%20macOS%20%7C%20Linux-blue?style=flat-square)](https://github.com/AivenYi/codex-installer-for-windows)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/AivenYi/codex-installer-for-windows?style=flat-square)](https://github.com/AivenYi/codex-installer-for-windows/stargazers)
-[![Last Commit](https://img.shields.io/github/last-commit/AivenYi/codex-installer-for-windows/main?style=flat-square)](https://github.com/AivenYi/codex-installer-for-windows/commits/main)
 
 ---
 
