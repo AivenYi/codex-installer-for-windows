@@ -1,4 +1,15 @@
-﻿# Codex + DeepSeek Automatic Installation Tool 🚀
+[![Author](https://img.shields.io/badge/Author-Aiven_Yi-blue?style=flat-square)](https://aizhuxuan.feishu.cn/wiki/Q9bAwhUZriPddJkX0JTcCTrVn7g?from=from_copylink)
+[![Multiplatform](https://img.shields.io/badge/Multiplatform-Windows-blue?style=flat-square)](https://github.com/AivenYi/codex-installer-for-windows)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/AivenYi/codex-installer-for-windows/main?style=flat-square)](https://github.com/AivenYi/codex-installer-for-windows/commits/main)
+[![WaytoAGI](https://img.shields.io/badge/WaytoAGI%E6%B1%9F%E8%A5%BF%E7%BB%84%E7%BB%87%E8%80%85-blue?style=flat-square)](https://www.waytoagi.com/zh)
+[![Email](https://img.shields.io/badge/Email-aivenyi5241%40gmail.com-blue?style=flat-square)](mailto:aivenyi5241@gmail.com)
+
+[中文](./README.md) | [日本語](./README_JP.md) | English
+
+---
+
+# Codex + DeepSeek Automatic Installation Tool 🚀
 
 > **One command, from zero to usage.**  
 > Automatically detects environment, installs dependencies, generates config files, starts services — fully guided, no manual steps required.
@@ -83,73 +94,73 @@ The script executes **9 steps** sequentially. You only need to provide your API 
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ① Check Python                                 │
-│     ├── ≥3.11 installed → ✅ Skip                │
-│     ├── <3.11 installed → ⬇️ Auto upgrade        │
-│     └── Not installed → ⬇️ Auto install          │
+│  ① Check Python                            │
+│     ├── ≥3.11 installed → ✅ Skip              │
+│     ├── <3.11 installed → ⬇️ Auto upgrade   │
+│     └── Not installed → ⬇️ Auto install    │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ② Check Node.js                                │
-│     ├── ≥20.x installed → ✅ Skip               │
-│     ├── <20.x installed → ⬇️ Auto upgrade       │
-│     └── Not installed → ⬇️ Auto install          │
+│  ② Check Node.js                           │
+│     ├── ≥20.x installed → ✅ Skip            │
+│     ├── <20.x installed → ⬇️ Auto upgrade  │
+│     └── Not installed → ⬇️ Auto install   │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ③ Configure DeepSeek API Key  ← You input     │
-│     ├── Opens DeepSeek registration page        │
-│     └── Enter your sk-... API Key               │
+│  ③ Configure DeepSeek API Key  ← You input  │
+│     ├── Opens DeepSeek registration page    │
+│     └── Enter your sk-... API Key          │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ④ Generate Config Files                        │
-│     ├── Start_Deepseek_relay.ps1  ← Launch      │
-│     └── config.toml              ← Config       │
+│  ④ Generate Config Files                   │
+│     ├── Start_Deepseek_relay.ps1 ← Launch │
+│     └── config.toml           ← Config      │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ⑤ Install codex-relay                          │
-│     ├── npm global install → ✅ Success         │
-│     └── Failed → Local fallback                 │
+│  ⑤ Install codex-relay                    │
+│     ├── npm global install → ✅ Success   │
+│     └── Failed → Local fallback          │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ⑥ Install Codex Desktop  ← Manual step        │
-│     ├── Opens official download page            │
-│     ├── Download Windows installer              │
-│     └── Install, then type y to confirm ✅      │
+│  ⑥ Install Codex Desktop ← Manual step    │
+│     ├── Opens official download page       │
+│     ├── Download Windows installer      │
+│     └── Install, then type y to confirm  ✅│
 └─────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ⑦ Verify Configuration                        │
-│     ├── Python ✓  Node.js ✓  Codex ✓  Relay ✓  │
-│     └── Config files ✓                          │
+│  ⑦ Verify Configuration                 │
+│     ├── Python ✓  Node.js ✓  Codex ✓  Relay ✓ │
+│     └── Config files ✓                    │
+└─────────────────────────���─��─────────────────────┘
+                        │
+                        ▼
+┌─────────────────────────────────────────────────┐
+│  ⑧ Set Auto-start                       │
+│     └── Startup shortcut created ✅        │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ⑧ Set Auto-start                              │
-│     └── Startup shortcut created ✅             │
+│  ⑨ Start Relay                          │
+│     ├── Launched as admin ✅             │
+│     └── Opens Codex official page      │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
 ┌─────────────────────────────────────────────────┐
-│  ⑨ Start Relay                                 │
-│     ├── Launched as admin ✅                    │
-│     └── Opens Codex official page               │
-└─────────────────────────────────────────────────┘
-                        │
-                        ▼
-┌─────────────────────────────────────────────────┐
-│              🎉 Installation Complete!          │
-│         Open PowerShell and run: codex           │
+│           🎉 Installation Complete!        │
+│      Open PowerShell and run: codex        │
 └─────────────────────────────────────────────────┘
 ```
 
@@ -369,6 +380,23 @@ sandbox = "unelevated"
 [desktop]
 conversationDetailMode = "STEPS_COMMANDS"
 ambient-suggestions-enabled = false
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-05-28T03:45:18Z"
+source_type = "local"
+source = '\\?\C:\Users\Administrator\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[projects.'d:\users\documents\new project']
+trust_level = "trusted"
 ```
 
 ### 6. Start Relay Manually
@@ -486,14 +514,14 @@ codex-installer/
 │
 ├── SKILL.md                    ← Codex skill guide
 ├── README.md                   ← Documentation (Chinese)
-├── README_EN.md                ← Documentation (English)
-├── README_JP.md                ← Documentation (Japanese)
+├── README_EN.md               ← Documentation (English)
+├── README_JP.md               ← Documentation (Japanese)
 ├── agents/
-│   └── openai.yaml            ← UI metadata
-├── assets/                    ← Reserved
+│   └── openai.yaml           ← UI metadata
+├── assets/                   ← Reserved
 └── scripts/
-    ├── auto-install.ps1        ← 🚀 Core auto-installation script
-    └── desensitize-files.ps1   ← Desensitized sharing script
+    ├── auto-install.ps1       ← 🚀 Core auto-installation script
+    └── desensitize-files.ps1  ← Desensitized sharing script
 ```
 
 ### Core Script Functions (auto-install.ps1)
@@ -516,9 +544,9 @@ codex-installer/
 %USERPROFILE%\.codex/
 │
 ├── Start_Deepseek_relay.ps1   ← 🚀 Relay startup script
-├── config.toml                ← ⚙️  Codex CLI config
+├── config.toml               ← ⚙️  Codex CLI config
 │
-└── share-to-friend/           ← 📤 Share folder (desensitized)
+└── share-to-friend/          ← 📤 Share folder (desensitized)
     ├── Start_Deepseek_relay_desensitized.ps1
     ├── config.toml
     └── README.txt

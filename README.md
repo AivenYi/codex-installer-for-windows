@@ -1,4 +1,15 @@
-﻿# Codex + DeepSeek 全自动安装工具 🚀
+[![Author](https://img.shields.io/badge/Author-Aiven_Yi-blue?style=flat-square)](https://aizhuxuan.feishu.cn/wiki/Q9bAwhUZriPddJkX0JTcCTrVn7g?from=from_copylink)
+[![Multiplatform](https://img.shields.io/badge/Multiplatform-Windows-blue?style=flat-square)](https://github.com/AivenYi/codex-installer-for-windows)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/AivenYi/codex-installer-for-windows/main?style=flat-square)](https://github.com/AivenYi/codex-installer-for-windows/commits/main)
+[![WaytoAGI](https://img.shields.io/badge/WaytoAGI%E6%B1%9F%E8%A5%BF%E7%BB%84%E7%BB%87%E8%80%85-blue?style=flat-square)](https://www.waytoagi.com/zh)
+[![Email](https://img.shields.io/badge/Email-aivenyi5241%40gmail.com-blue?style=flat-square)](mailto:aivenyi5241@gmail.com)
+
+[English](./README_EN.md) | [日本語](./README_JP.md) | 中文
+
+---
+
+# Codex + DeepSeek 全自动安装工具 🚀
 
 > **一行命令，从零到使用。**  
 > 自动检测环境、安装依赖、生成配置文件、启动服务，全程引导，无需手动操作。
@@ -86,7 +97,7 @@ powershell -ExecutionPolicy Bypass -File "C:\Users\Administrator\.codex\skills\c
 
 ```
 ┌─────────────────────────────────────────────────┐
-│            Codex 全自动安装工具启动               │
+│            Codex 全自���安装工具启动               │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
@@ -102,7 +113,7 @@ powershell -ExecutionPolicy Bypass -File "C:\Users\Administrator\.codex\skills\c
 │  ② 检查 Node.js 环境                             │
 │     ├── 已安装 ≥20.x → ✅ 跳过                   │
 │     ├── 已安装 <20.x → ⬇️ 自动升级最新版          │
-│     └── 未安装 → ⬇️ 自动下载安装最新版             │
+│     └── 未安装 → ⬇️ 自动下载安装最新版           │
 └─────────────────────────────────────────────────┘
                         │
                         ▼
@@ -135,7 +146,7 @@ powershell -ExecutionPolicy Bypass -File "C:\Users\Administrator\.codex\skills\c
 └─────────────────────────────────────────────────┘
                         │
                         ▼
-┌─────────────────────────────────────────────────┐
+┌────────────��────────────────────────────────────┐
 │  ⑦ 验证配置                                      │
 │     ├── Python ✓  Node.js ✓  Codex ✓  Relay ✓   │
 │     └── 配置文件完整 ✓                           │
@@ -223,7 +234,7 @@ powershell -ExecutionPolicy Bypass -File "C:\Users\Administrator\.codex\skills\c
 3. 按照安装向导完成安装
 4. 回到 PowerShell，输入 `y` 确认安装完成
 
-#### 步骤 ⑦：验证配置
+#### ��骤 ���：验证配置
 
 脚本会检查以下项目：
 - ✅ `Start_Deepseek_relay.ps1` 启动脚本是否存在
@@ -270,7 +281,7 @@ powershell -ExecutionPolicy Bypass -File "C:\Users\Administrator\.codex\skills\c
 ### 3. 手动安装 Codex 桌面程序
 
 1. 打开 https://openai.com/zh-Hans-CN/codex/get-started/
-2. 点击下载 Windows 版本
+2. ��击下载 Windows 版本
 3. 运行安装程序
 4. 验证安装：`codex --version`
 
@@ -399,7 +410,7 @@ enabled = true
 trust_level = "trusted"
 ```
 
-### 6. 手动启动 Relay
+### 6. ��动��动 Relay
 
 以 **管理员身份** 运行 PowerShell，然后执行：
 
@@ -472,7 +483,7 @@ $apiKey = "sk-xxxx...xxxx（替换为你的 Key）"
 |------|---------|
 | winget 安装 Python 失败 | 脚本会自动从官网下载安装 |
 | Python 下载缓慢 | 手动访问 https://www.python.org/downloads/ 下载 |
-| 安装后 python 命令不可用 | 重启 PowerShell，确保安装时勾选了 Add to PATH |
+| 安装后 python 命令不可用 | 重启 PowerShell确保安装时勾选了 Add to PATH |
 
 ### Node.js 相关问题
 
@@ -517,8 +528,11 @@ $apiKey = "sk-xxxx...xxxx（替换为你的 Key）"
 
 ```
 codex-installer/
-│
+��
 ├── SKILL.md                    ← Codex 技能引导文档
+├── README.md                   ← 文档（中文）
+├── README_EN.md                ← 文档（英语）
+├── README_JP.md                ← 文档（日语）
 ├── agents/
 │   └── openai.yaml            ← UI 元数据（技能列表显示）
 ├── assets/                    ← 预留资源目录
@@ -634,4 +648,3 @@ Stop-Process -Name "codex-relay" -Force
 
 > 💡 **提示**：如果在使用过程中遇到任何问题，请参考 [故障排除指南](#故障排除指南)。  
 > 如果问题仍未解决，可以重新运行 `auto-install.ps1` 脚本重新配置。
-
