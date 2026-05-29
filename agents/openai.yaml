@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "Codex 全自动安装"
+  short_description: "一行命令自动安装 Python/Node.js/Codex/Relay"
+  brand_color: "#10B981"
+  default_prompt: "使用 $codex-installer 为我全自动安装配置 Codex CLI + DeepSeek，我只需要提供 API Key。"
