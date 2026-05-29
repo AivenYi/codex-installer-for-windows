@@ -91,7 +91,7 @@ powershell -ExecutionPolicy Bypass -File "C:\Users\Administrator\.codex\skills\c
 
 ### 流程总览
 
-```
+
 flowchart TD
     A([🚀 Codex 全自动安装工具启动]) --> B
     B["① 检查 Python 环境<br>• 已安装 ≥3.11 → ✅ 跳过<br>• 已安装 <3.11 → ⬇️ 自动升级最新版<br>• 未安装 → ⬇️ 自动下载安装最新版"] --> C
@@ -104,7 +104,7 @@ flowchart TD
     I["⑧ 设置开机自启<br>• Startup 快捷方式已创建 ✅"] --> J
     J["⑨ 启动 Relay 代理<br>• 以管理员权限启动 ✅<br>• 打开 Codex 官方页面"] --> K
     K(["🎉 安装完成！<br>打开 PowerShell 运行: codex"])
-```
+
 
 ### 详细步骤说明
 
